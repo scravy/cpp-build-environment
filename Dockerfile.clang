@@ -9,5 +9,7 @@ RUN apt-get -qq install \
   clang \
   cmake
 
+RUN update-alternatives --set c++ /usr/bin/clang++
+
 CMD ["/bin/bash"]
 

@@ -11,7 +11,6 @@ alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lAh'
 alias llt='ls -lAhtr'
-alias gls='git status'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -24,7 +23,6 @@ alias rless=$(which less) # raw less
 alias grep='rgrep -I --color=always'
 alias less='rless -R'
 alias diff='rdiff --color=always'
-alias jshell='docker run -it openjdk:10-slim /bin/jshell'
 
 # do not put duplicate lines or lines starting with a space in the history
 HISTCONTROL=ignoreboth
@@ -68,6 +66,3 @@ PROMPT_COMMAND=__prompt_command # Func to gen PS1 after CMDs
 
 __prompt_command
 
-alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
-source /usr/share/bash-completion/completions/git
